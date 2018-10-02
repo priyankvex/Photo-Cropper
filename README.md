@@ -14,6 +14,8 @@ Payload : JSON
 {"image": "base_64_image", "coordinates": [[382, 148], [443, 141], [629, 216], [563, 423], [380, 365], [329, 358], [382, 148]]
 }
 `
+
+
 Response : JSON
 
 Cropped image in base 64
