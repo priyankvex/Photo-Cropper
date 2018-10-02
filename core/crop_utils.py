@@ -20,6 +20,7 @@ def crop_image(base64_image, coordinates):
     cropped_image_array[:, :, 3] = mask * 255
 
     cropped_image = Image.fromarray(cropped_image_array, "RGBA")
+    # Could've used named temporary file here. Skipping for  now.
     cropped_image.save("temporary_file.png")
 
     with open("temporary_file.png", "rb") as image_file:

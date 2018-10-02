@@ -7,7 +7,6 @@ from core.crop_utils import crop_image
 
 class CropView(CreateAPIView):
 
-    @csrf_exempt
     def post(self, request, *args, **kwargs):
 
         input_base64_image = request.data.get("image")
